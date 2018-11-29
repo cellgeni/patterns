@@ -22,7 +22,7 @@ process merge {
    publishDir "$baseDir/results", mode: 'copy'
 
    input:
-   val metafile from ch_merge
+   file metafile from ch_merge
 
    output:
    file('*.txt')
